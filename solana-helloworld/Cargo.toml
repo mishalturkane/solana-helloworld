@@ -1,0 +1,16 @@
+[package]
+name = "hello_world2"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+solana-sdk = "1.17.25"
+toml_edit = "0.21.1"
+
+[lib]
+name = "hello_world2"
+crate-type = ["cdylib", "lib"]
+
+[package.metadata.docs.rs]
+# Metadata specific to docs.rs (optional)
+rust = "1.78.0"
